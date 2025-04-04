@@ -6,6 +6,20 @@ flex-direction: column;
 height: 90vh;
 }
 footer{
-    height: 13vh;
+   padding-top: 1%;
+   padding-bottom: 1%;
     background-color: yellow;
+}
+.mezzo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contatti p{
+    display: flex;
+    align-items: center;
+}
+.passioni{
+    height: 80vh;
+    background-color: rgb(253, 156, 12);
 }
