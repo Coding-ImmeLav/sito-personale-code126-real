@@ -1,3 +1,15 @@
+body {
+    /* Applica lo sfondo animato a tutto il body */
+    background: linear-gradient(-45deg, #aeefff, #b2f7ef, #c3cfff, #b2e0f7);
+    background-size: 400% 400%;
+    animation: heroGradient 12s ease-in-out infinite;
+}
+
+.hero, .navbar, .passioni, footer {
+    background: transparent !important;
+    animation: none !important;
+}
+
 .hero {
     display: flex;
 justify-content: center;
@@ -5,10 +17,19 @@ align-items: center;
 flex-direction: column;
 height: 90vh;
 }
+
+.hero2 {
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 20vh;
+ 
+}
 footer{
    padding-top: 1%;
    padding-bottom: 1%;
-    background-color: yellow;
+   background: white !important;
 }
 .mezzo{
     display: flex;
@@ -20,17 +41,31 @@ footer{
     align-items: center;
 }
 .passioni{
-    height: 80vh;
-    background-color: rgb(253, 156, 12);
+    height: 100vh;
+    margin-bottom: 90px; /* Maggiore spazio sotto la sezione interessi */
 }
 .foglio{
     padding: 3%;
     margin-top: 4%;
     margin-bottom: 4%;
     border: 1px solid black;
+    background: white;
 }
 .navbar{
     position: sticky;
     top: 0;
     z-index: 999;
 }
+
+@keyframes heroGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
